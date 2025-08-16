@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Моя визитка</title>
+  <link rel="icon" href="website-testing.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="photo_2025-07-25_06-02-44.jpg" alt="Моё фото" class="profile-photo" />
+
+    <div class="content">
+      <button onclick="toggleInfo()">Обо мне</button>
+      <button onclick="toggleSkills()">Навыки</button>
+      <button onclick="toggleWorks()">Работы</button>
+      <button onclick="toggleContacts()">Связаться со мной</button>
+
+      <div id="info" class="dropdown">
+        <p>Я — QA-инженер с терпением детектива и любовью к деталям.</p>
+        <p>Моя цель — находить и устранять ошибки до того, как они станут проблемами для пользователей.</p>
+        <p>Пишу тест-кейсы так, что разработчики плачут от счастья</p>
+      </div>
+
+      <div id="skills" class="dropdown">
+        <ul>
+          <li>Ручное тестирование (тест-кейсы, чек-листы, баг-репорты)</li>
+          <li>Тестирование API (Postman, SoapUI, REST)</li>
+          <li>Работа с базами данных (SQL — SELECT, JOIN, WHERE)</li>
+          <li>Тестирование UI (DevTools, адаптивность, кроссбраузерность)</li>
+          <li>Agile методологии (Scrum, Kanban)</li>
+          <li>Тестовая документация</li>
+        </ul>
+      </div>
+
+      <div id="works" class="dropdown">
+  <p>Мои научные публикации:</p>
+  <ul>
+    <li>
+      <a href="https://dzen.ru/a/XY4n4TSAggCw3uXk" target="_blank">
+        История появления мобильного телефона
+      </a>
+    </li>
+    <li>
+      <a href="https://dzen.ru/a/XZcXF6P25ACtmeF9" target="_blank">
+        Изобретения, появившиеся по чистой случайности
+      </a>
+    </li>
+    <li>
+      <a href="https://dzen.ru/a/XZUhG71jlgCxnLG7" target="_blank">
+        Лучшие технополисы России
+      </a>
+    </li>
+  </ul>
+  <p>Мой GitHub:</p>
+  <ul>
+    <li>
+      <a href="https://github.com/...." target="_blank">
+        github.com/....
+      </a>
+    </li>
+  </ul>
+</div>
+
+      <div id="contacts" class="dropdown">
+        <p>Email: stanislav-zimovets@yandex.ru</p>
+        <p>Telegram: @Stanislav_Zimovets</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
